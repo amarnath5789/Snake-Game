@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.body {
+  background: url("snake-wallpapers.jpg");
+  background-position: center;
+  min-height: 92vh;
+  background-size: 100vw 92vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 0px;
+  box-shadow: 0px 0px 5px 0px #0000004f;
+}
+
+.play {
+  position: relative;
+  padding: 12px 35px;
+  margin: 0 15px;
+  color: #21ebff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 40px;
+  font-weight: 900;
+  font-family: 'Press Start 2P', cursive;
+  border-radius: 20px;
+  transition: 0.5s;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
+}
+
+.play:nth-child(1) {
+  filter: hue-rotate(667deg);
+}
+
+.play:hover {
+  background: #21ebff;
+  color: #111;
+  box-shadow: 0 0 50px #21ebff;
+  transition-delay: 0.5s;
+}
+
+.play:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border-top: 5px solid #000000;
+  border-left: 5px solid #000000;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+  border-radius: 20px;
+}
+
+.play:hover:before {
+  width: 98%;
+  height: 96%;
+  transition-delay: 0s;
+}
+
+.play:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  border-bottom: 5px solid #000000;
+  border-right: 5px solid #000000;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+  border-radius: 20px;
+}
+
+.play:hover:after {
+  width: 98%;
+  height: 96%;
+  transition-delay: 0s;
+}
