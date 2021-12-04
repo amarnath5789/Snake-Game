@@ -20,7 +20,7 @@
     </nav>
     <div class="body">
         <div id="scoreBox">Score: 0</div>
-        <div id="hiscoreBox">HiScore: 0</div>
+        <div id="hiscoreBox">High-Score: 0</div>
         <div class="exit"><a class="play" href="index.php">EXIT</a></div>
         <div id="board"></div>
     </div>
